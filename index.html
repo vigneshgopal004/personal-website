@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patience Cloud</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+      background-image: url('https://www.transparenttextures.com/patterns/cloudy-day.png');
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #4f46e5;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-out;
+    }
+    .icon-header {
+      width: 24px;
+      height: 24px;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-out;
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #111827;
+    }
+    p.intro {
+      font-size: 1.1rem;
+      color: #374151;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .future-plan {
+      background: #eef2ff;
+      padding: 1.25rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      text-align: center;
+      color: #1e3a8a;
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .future-plan-icon {
+      width: 32px;
+      height: 32px;
+      color: #4f46e5;
+    }
+    form {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+    form h2 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: #4f46e5;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin: 1.5rem auto 0;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e5e7eb;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.8;
+    }
+    footer a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      .future-plan, form {
+        padding: 1rem;
+      }
+      header {
+        font-size: 1.1rem;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <i data-lucide="cloud-sun" class="icon-header"></i>
+    Patience Cloud
+  </header>
+
+  <main>
+    <h1>Welcome to Patience Cloud</h1>
+    <p class="intro">Building patient-first cloud tools for a smoother, smarter future.</p>
+
+    <div class="future-plan">
+      <i data-lucide="activity" class="future-plan-icon"></i>
+      PatienceCloud is pioneering the future of cloud with intelligent, user-centric tools designed for seamless scalability and effortless integration. Our patient-first approach ensures a smooth, reliable experience that adapts and grows alongside your needs — empowering you to innovate with confidence.
+    </div>
+
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">
+        <i data-lucide="send"></i> Send Message
+      </button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Patience Cloud. All rights reserved.</p>
+    <p>G Vignesh Gopal &nbsp;|&nbsp; 📧 <a href="mailto:vigneshgopal004@gmail.com">Email</a> &nbsp;|&nbsp; 📞 <a href="tel:6369498551">6369498551</a></p>
+    <p>
+      🌐 <a href="https://portfolio.patiencecloud.com" target="_blank">Portfolio</a> &nbsp;|&nbsp;
+      💻 <a href="https://github.com/vigneshgopal004" target="_blank">GitHub</a> &nbsp;|&nbsp;
+      🔗 <a href="http://linkedin.com/in/vignesh-gopal-408146343" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you! We’ll be in touch soon.');
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
